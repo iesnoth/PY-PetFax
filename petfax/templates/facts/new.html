@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Facts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
             </div>
             <div>
                 <label for="new_fact">Your Fact</label>
-                <textarea id="new_fact" name="fact" rows="4" cols="50">
+                <textarea id="new_fact" name="fact">
                     Enter fact here
                 </textarea>
             </div>
-            <input type="submit"/>
+            <input type="submit" />
         </form>
     </div>
 </body>
