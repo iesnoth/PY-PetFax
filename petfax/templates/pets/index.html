@@ -17,8 +17,9 @@
         {% for pet in pets %}
         <div class="each_pet_home">
             <h2>{{pet.pet_name}}</h2>
-            <img class="index_img" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
-            <p><a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">Learn More ></a></p>
+            <a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">
+                <img class="index_img" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
+            </a>
         </div>
         {% endfor %}
         <p class="add_recipe"><a class="button_link" href="http://127.0.0.1:5000/facts/new">Add a Recipe</a></p>
