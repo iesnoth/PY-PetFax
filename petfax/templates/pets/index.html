@@ -13,12 +13,14 @@
     <h1>
         Welcome to PetFax
     </h1>
-    <div>
-        {% for pet in pets %}
-        <h2>{{pet.pet_name}}</h2>
-        <img src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
-        <a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">Learn More ></a>
-        {% endfor %}
+    <div class="container">
+        <div class="each_pet_home">
+            {% for pet in pets %}
+            <h2>{{pet.pet_name}}</h2>
+            <img class="index_img" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
+            <a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">Learn More ></a>
+            {% endfor %}
+        </div>
     </div>
 </body>
 

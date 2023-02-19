@@ -1,3 +1,30 @@
+/* Globals */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Color Palette
+#382112 dark brown
+#A8763E copper
+#F7F0E4 off white */
+
+html {
+    background-color: #F7F0E4;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
-    background-color: aquamarine;
+    text-align: center;
+    
+}
+
+.container {
+    display: inline flex;
+}
+
+.each_pet_home {
+    display:block;
+}
+
+.index_img {
+    width: 30vh;
+    height: auto;
 }
