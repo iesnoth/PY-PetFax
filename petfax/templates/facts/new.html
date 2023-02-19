@@ -12,18 +12,20 @@
 <body>
     <div>
         <h1>Add a fact!</h1>
-        <form>
-            <div>
+        <form class="container" id="fact_container">
+            <div class="form-input">
                 <label for="submitter">Submitter</label>
-                <input type="text" id="submitter" name="name" />
+                <input class="textarea" type="text" id="submitter" name="name" />
             </div>
-            <div>
+            <div class="form-input">
                 <label for="new_fact">Your Fact</label>
-                <textarea id="new_fact" name="fact">
+                <textarea class="textarea" id="new_fact" name="fact">
                     Enter fact here
                 </textarea>
             </div>
-            <input type="submit" />
+            <div class="form-input">
+                <input type="submit" />
+            </div>
         </form>
     </div>
 </body>

@@ -83,11 +83,12 @@ h2 {
 /* EACH PET */
 .block{
     display: inline-block;
-    width:50%;
+    width: 40vh;
+    margin: 50%, 0, 50%, 0
 }
 
 .page_img{
-    width: 30vh;
+    width: 40vh;
     height: auto;
     border-radius: 1em;
     box-shadow: 2px 2px #ddd;
@@ -96,6 +97,7 @@ h2 {
 #facts{ 
     height: 40vh;
     margin-top:65px;
+    
 }
 
 #text{
@@ -104,8 +106,27 @@ h2 {
     margin-bottom: 1em;
     padding:1em;
     border-radius: 1em;
+    box-shadow: 2px 2px #ddd;
+
 }
 
 #home_button{
     align-self:last baseline;
+}
+
+/* Facts Page */
+
+#fact-container{
+    width:40%;
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    margin-bottom:10px;
+
+}
+
+#textarea{
+    width: 60%;
 }
