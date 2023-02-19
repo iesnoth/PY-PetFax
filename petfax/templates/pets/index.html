@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetFax</title>
+    <title>Forbidden Ingredients</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
     <h1>
-        Welcome to PetFax
+        Forbidden Ingredients
     </h1>
     <div class="container">
+        {% for pet in pets %}
         <div class="each_pet_home">
-            {% for pet in pets %}
             <h2>{{pet.pet_name}}</h2>
             <img class="index_img" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
-            <a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">Learn More ></a>
-            {% endfor %}
+            <p><a href="http://127.0.0.1:5000/pets/{{pet.pet_id}}">Learn More ></a></p>
         </div>
+        {% endfor %}
+        <p class="add_recipe"><a class="button_link" href="http://127.0.0.1:5000/facts/new">Add a Recipe</a></p>
     </div>
+
 </body>
 
 </html>

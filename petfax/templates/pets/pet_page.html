@@ -10,12 +10,22 @@
 </head>
 
 <body>
-    <div class="one_pet">
-        <h1>{{pet.pet_name}}</h1>
-        <img src="{{pet.pet_photo}}" alt="{{pet.pet_name}}" />
-        <h3>
-            {{pet.pet_fact}}
-        </h3>
+    <div class="container">
+        <div class="block">
+            <h1>{{pet.pet_name}}</h1>
+            <img class="page_img" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}" />
+        </div>
+        <div class="block" id="facts">
+            <h2>
+                Animal Facts
+            </h2>
+            <p id="text">
+                {{pet.pet_fact}}
+            </p>
+            <p>
+                <a id="home_button" class="button_link" href="http://127.0.0.1:5000/pets/">Back to Home</a>
+            </p>
+        </div>
     </div>
 </body>
 
