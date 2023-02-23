@@ -110,7 +110,6 @@ h2 {
 #facts {
     height: 40vh;
     margin-top: 65px;
-
 }
 
 #text {
@@ -127,7 +126,7 @@ h2 {
     align-self: last baseline;
 }
 
-/* Facts Page */
+/* Facts Submit Page */
 
 #fact-container {
     width: 30%;
@@ -161,4 +160,20 @@ h2 {
 
 #facts-home-link{
     color: var(--other-accent)
+}
+
+/* Facts View Page */
+
+.each_fact{
+    display: block;
+    width: 40vh;
+    margin: 50%, 0, 50%, 0;
+    text-align: left;
+}
+
+.submitter{
+    font-family: var(--name-font);
+    letter-spacing: 1px;
+    color: var(--other-accent);
+    font-size: 20px;
 }
